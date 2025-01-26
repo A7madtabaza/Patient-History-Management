@@ -1,0 +1,22 @@
+.body{
+    font-size: large;
+
+}
+.header{
+background-color: blueviolet;
+display: flex;
+justify-content: center;
+
+}
+.contaner{
+    background-color: brown;
+    margin-top: 100px;
+}
+.contant{
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}

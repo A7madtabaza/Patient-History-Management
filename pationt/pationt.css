@@ -1,0 +1,163 @@
+ /* body{
+    background:url("img/bacg.jpg");
+     background-size: cover;
+    background-repeat: no-repeat;
+      font-family: 'Roboto', sans-serif;
+ }
+ .circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 6px solid #00bcd4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #00bcd4;
+        }
+        .card {
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+        
+          .image-container {
+            perspective: 1000px;
+        }
+
+        .rotating-image {
+           
+            
+            
+            max-width: 100%;
+            transform-style: preserve-3d;
+            animation: rotate 5s infinite linear; /* حركة الدوران */
+            /* border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(234, 234, 234, 0.6); */
+        /* }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        } */
+        /* إعداد الخطوط الأساسية */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:; /* لون خلفية خفيف */
+    color: #333; /* لون النص */
+}
+
+/* ترويسة الصفحة */
+h2 {
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* تنسيق البطاقات */
+/* تحسين البطاقة */
+.card-custom {
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+.card-custom:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* الدائرة */
+.circle {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+/* تحسين الأيقونات */
+.icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+/* تحسين النصوص */
+.card-custom h4 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card-custom p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* الصورة الدوارة */
+.image-container {
+            perspective: 1000px;
+        }
+
+        .rotating-image {
+           
+            
+            
+            max-width: 100%;
+            transform-style: preserve-3d;
+            animation: rotate 5s infinite linear; /* حركة الدوران */
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(234, 234, 234, 0.6); */
+       }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        } 
+
+.btn-lg {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+/* الفوتر */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

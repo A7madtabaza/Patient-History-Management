@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="pationt.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="Add.css">
+   
+</head>
+<body>
+    <!-- Navigation -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Medical Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Patients</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+
+    <div class="container">
+        <!-- Patient Information Section -->
+        <div class="row mb-4">
+            <h2 class="col-12">Patient Information</h2>
+            <div class="col-12 col-md-6 mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" id="fullName" class="form-control" placeholder="Enter full name">
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label for="idNumber" class="form-label">ID Number</label>
+                <input type="text" id="idNumber" class="form-control" placeholder="Enter ID number">
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <input type="date" id="dob" class="form-control">
+            </div>
+            
+            <div class="col-12 col-md-6 mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="number" id="phone" class="form-control" placeholder="Enter phone number">
+               
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="number" id="phone" class="form-control" placeholder="Enter phone number">
+            
+            </div>
+            
+            <div class="col-12 col-md-6 mb-3">
+                <label for="gender" class="form-label">Gender</label>
+                <select id="gender" class="form-select">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" id="country" class="form-control" placeholder="Enter country">
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label for="city" class="form-label">City</label>
+                <input type="text" id="city" class="form-control" placeholder="Enter city">
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label for="street" class="form-label">Street</label>
+                <input type="text" id="street" class="form-control" placeholder="Enter street">
+            </div>
+        </div>
+
+        <hr>
+<!-- <div class="contener1">
+  <div class="row">
+    <label for="medical-options" class="form-label1">Medical colours:</label>
+    <select id="medical-options" class="form-select1">
+      <option value="" disabled selected>-- Select an option --</option>
+      <option value="CVD">CVD</option>
+      <option value="CA">CA</option>
+      <option value="DM">DM</option>
+      <option value="CRD">CRD</option>
+      <option value="MS">MS</option>
+    </select>
+  </div> -->
+  <div class="contener1">
+  <div class="row">
+    <label for="color-options" class="form-label1">Select a medical option:</label>
+    <select id="color-options" class="form-select1">
+      <option value="red">CVD :(Cardiovascular Diseases)</option>
+      <option value="#7f00ff">CA :( Cancer)</option>
+      <option value="#0135a6">DM :(Diabetes Mellitus)</option>
+      <option value="#ebebeb">CRD :(Chronic Respiratory Diseases)</option>
+      <option value="#d9d9d9 ">MS :(Multiple Sclerosis)</option>
+    </select>
+  </div>
+  <div id="rectangle-container"></div>
+</div>
+
+
+
+
+
+  <div id="description" class="description-box"></div>
+</div>
+    <!-- <div class="col-2"><label for="">Medical colours:</label></div>
+    <div class="col-2"><button class="btn1">CVD</button></div>
+    <div class="col-2"><button class="btn2">CA</button></div>
+    <div class="col-2"><button class="btn3">DM</button></div>
+     <div class="col-2"><button class="btn4">CRD</button></div>
+    <div class="col-2"><button class="btn5">MS</button></div> -->
+    
+</div>
+
+</div>
+ <div class="container">
+    <div class="row align-items-center">
+        <!-- العمود الأيسر -->
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="circle">75%</div>
+                <div class="icon">🧠</div>
+                <div class="content">
+                    <h4>Brain Activity</h4>
+                     <a href="#">read more</a>
+                     <input type="file">
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="circle">25%</div>
+                <div class="icon">🫁</div>
+                <div class="content">
+                    <h4>Lung Capacity</h4>
+                    <a href="#">read more</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="circle">50%</div>
+                <div class="icon">❤️</div>
+                <div class="content">
+                    <h4>Heart Rate</h4>
+                    <button>read more</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- العمود الأوسط للصورة -->
+        <div class="col-md-4 d-flex justify-content-center">
+            <img class="rotating-image" src="imges/imges1.png" alt="3D Medical Image">
+        </div>
+
+        <!-- العمود الأيمن -->
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="circle">84%</div>
+                <div class="icon">🦾</div>
+                <div class="content">
+                    <h4>Muscle Strength</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="circle">75%</div>
+                <div class="icon">🩺</div>
+                <div class="content">
+                    <h4>Medical Checkup</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                
+            </div>
+            <div class="card mb-3">
+                <div class="circle">75%</div>
+                <div class="icon">🩺</div>
+                <div class="content">
+                    <h4>Medical Checkup</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+        <hr>
+<div class="contaner3">
+        <!-- Diagnosis and Medications Section -->
+        <div class="row">
+            <div class="col-sm-6 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Diagnosis</h5>
+                        <textarea class="form-control mb-3" rows="4" placeholder="Enter diagnosis"></textarea>
+                        <div class="row g-3"></div>
+                         <div class="col-2">
+   <label for="">Duration of Symptoms</label>
+    <select  class="form-select2">
+      <option value="">Less than a week</option>
+      <option value="">more than a week</option>
+ 
+    </select>
+  </div>
+                     <div class="col-2">
+   <label for="">Severity</label>
+    <select  class="form-select2">
+      <option value="">Less than a week</option>
+      <option value="">more than a week</option>
+ 
+    </select>
+  </div>
+                   
+                    </div>
+                    <div class="row">
+                  <div class="btn btn-primary  col-6" >save</div>
+                    <div class="btn btn-primary col-6" data-bs-toggle="tooltip" data-bs-placement="top" title="Helps in diagnosing the condition">
+  (CDSS)
+</div>
+                    </div>
+                </div>
+             
+            </div>
+
+            <div class="col-sm-6 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Drugs</h5>
+                        <div class="mb-3">
+                            <label for="prescribedMedications" class="form-label">Prescribed Medications</label>
+                            <textarea class="form-control" id="prescribedMedications" rows="4" placeholder="Enter prescribed medications"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="treatmentNotes" class="form-label">Treatment Notes</label>
+                            <textarea class="form-control" id="treatmentNotes" rows="4" placeholder="Enter treatment notes"></textarea>
+                        </div>
+                           </div>
+                    <div class="row">
+                  <div class="btn btn-primary  col-6" >save</div>
+                    <div class="btn btn-primary col-6" data-bs-toggle1="tooltip" data-bs-placement="top" title="Helps prescribe medications">
+                     (CDSS)
+                        </div>
+                    </div>
+                    </div>
+                    
+
+                </div>
+                
+            </div>
+            
+        </div>
+</div>
+        <hr>
+
+        <!-- Doctor's Info and Signature -->
+        <div class="container mt-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 mb-4">
+                    <h3 class="text-primary">Dr. John Doe</h3>
+                    <p class="text-muted">Doctor's name</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Doctor's Signature</h5>
+                    <input type="file">
+                    <p class="text-muted mt-2">Electronic Signature</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Hospital Seal</h5>
+                   <input type="file">
+                    <p class="text-muted mt-2">Official Seal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 Sample Page. All rights reserved.</p>
+        <a href="#" class="text-white mx-2">Facebook</a>
+        <a href="#" class="text-white mx-2">Twitter</a>
+        <a href="#" class="text-white mx-2">LinkedIn</a>
+    </footer> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="Add.js"></script>
+</body>
+</html>

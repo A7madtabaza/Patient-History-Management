@@ -1,0 +1,75 @@
+ .circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 6px solid #00bcd4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #00bcd4;
+        }
+        .card {
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+        
+          .image-container {
+            perspective: 1000px;
+        }
+
+        .rotating-image {
+           
+            
+            
+            max-width: 100%;
+            transform-style: preserve-3d;
+            animation: rotate 5s infinite linear; /* حركة الدوران */
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(234, 234, 234, 0.6);
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+.form-label1{
+  /* background: url("//unsplash.it/1080"); */
+  height: 100px;
+  color: white;
+background: rgb(48, 33, 215);
+text-align: center;
+font-size: 40px;
+}
+
+.form-select1{
+  
+  height: 40px;
+  margin-bottom:50px ;
+  text-align: center;
+  font-size: 30px;
+
+}
+ #rectangle-container {
+    margin-top: 20px;
+  }
+
+  .rectangle {
+   
+    height: 100px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+.btn{
+  font-size: 20px;
+  border-radius: 50px;
+}

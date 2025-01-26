@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Dashboard</title>
+    <link rel="stylesheet" href="das.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- الشريط الجانبي -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Health<span>Care</span></h2>
+            </div>
+            <ul class="menu">
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Patients</a></li>
+                <li><a href="#">Appointments</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- المحتوى الرئيسي -->
+        <main class="main-content">
+            <header class="header">
+                <h1>Dashboard</h1>
+                <div class="user">
+                    <img src="img/Screenshot 2025-01-03 012145.png" alt="User">
+                    <span>Dr. John Doe</span>
+                </div>
+            </header>
+
+            <section class="stats">
+                <div class="card">
+                    <h3>Total Patients</h3>
+                    <p>120</p>
+                </div>
+                <div class="card">
+                    <h3>Appointments Today</h3>
+                    <p>15</p>
+                </div>
+                <div class="card">
+                    <h3>Doctors</h3>
+                    <p>8</p>
+                </div>
+                <div class="card">
+                    <h3>Pending Reports</h3>
+                    <p>5</p>
+                </div>
+            </section>
+
+            <section class="table-section">
+                <h2>Recent Appointments</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Patient Name</th>
+                            <th>Doctor</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>Dr. Alice Johnson</td>
+                            <td>23 Jan 2025</td>
+                            <td>Confirmed</td>
+                        </tr>
+                        <tr>
+                            <td>Mike Brown</td>
+                            <td>Dr. Mark Lee</td>
+                            <td>23 Jan 2025</td>
+                            <td>Pending</td>
+                        </tr>
+                        <tr>
+                            <td>Emily Davis</td>
+                            <td>Dr. Sarah Connor</td>
+                            <td>22 Jan 2025</td>
+                            <td>Completed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    
+     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+</body>
+</html>
